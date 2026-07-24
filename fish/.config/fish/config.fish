@@ -3,6 +3,9 @@ set fish_greeting ""
 
 set -gx EDITOR nvim
 
+# Homebrew (must come first so `brew` is available below)
+fish_add_path --global /opt/homebrew/bin
+
 # PATH (ported from ~/.zshrc)
 fish_add_path --global /opt/homebrew/opt/openjdk@17/bin
 fish_add_path --global /opt/homebrew/opt/ruby/bin
