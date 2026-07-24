@@ -7,6 +7,8 @@ brew "cocoapods"
 brew "fastlane"
 # Distributed revision control system
 brew "git"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Tools and libraries to manipulate images in select formats
