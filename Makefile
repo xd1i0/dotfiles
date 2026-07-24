@@ -1,4 +1,4 @@
-PACKAGES := nvim ghostty zsh
+PACKAGES := nvim ghostty zsh claude
 
 all: sync
 
