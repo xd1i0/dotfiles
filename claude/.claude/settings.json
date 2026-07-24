@@ -39,7 +39,9 @@
       "Bash(security find-generic-password*)",
       "Bash(security find-internet-password*)",
       "Bash(security dump-keychain*)",
-      "Bash(security export*)"
+      "Bash(security export*)",
+      "Bash(*Co-Authored-By*)",
+      "Bash(*co-authored-by*)"
     ],
     "allow": [
       "Bash(git status)",

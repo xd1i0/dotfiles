@@ -42,6 +42,9 @@ proven true across more than one project.
   before committing if one exists.
 - Commit messages: concise, explain *why* not *what*, no attribution spam
   beyond what's already configured.
+- Never add "Co-Authored-By" (or any variant) to commits — enforced as a
+  hard block in `settings.json` permissions.deny, this is the documented
+  reason why.
 
 ## Code Style
 
