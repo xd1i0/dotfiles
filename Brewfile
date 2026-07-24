@@ -9,6 +9,10 @@ brew "fastlane"
 brew "git"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Fuzzy finder
+brew "fzf"
+# Simple, fast, user-friendly alternative to find
+brew "fd"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Tools and libraries to manipulate images in select formats
@@ -57,6 +61,8 @@ cask "hiddenbar"
 cask "pearcleaner"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Mesh VPN
+brew "tailscale"
 # besser als postman
 cask "bruno"
 cargo "cargo-instruments"
