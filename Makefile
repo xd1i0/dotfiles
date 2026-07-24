@@ -2,6 +2,9 @@ PACKAGES := nvim ghostty zsh claude
 
 all: sync
 
+brew:
+	brew bundle install --file=Brewfile
+
 sync:
 	stow -v -t ~ $(PACKAGES)
 
@@ -11,4 +14,4 @@ clean:
 restow:
 	stow -R -v -t ~ $(PACKAGES)
 
-.PHONY: all clean sync restow
+.PHONY: all clean sync restow brew
