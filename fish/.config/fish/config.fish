@@ -30,10 +30,10 @@ set -g __fish_git_prompt_char_cleanstate "✔"
 set -g __fish_git_prompt_char_untrackedfiles "…"
 set -g __fish_git_prompt_char_stagedstate "●"
 set -g __fish_git_prompt_char_conflictedstate "+"
-set -g __fish_git_prompt_color_dirtystate yellow
-set -g __fish_git_prompt_color_cleanstate green --bold
-set -g __fish_git_prompt_color_invalidstate red
-set -g __fish_git_prompt_color_branch cyan --dim
+set -g __fish_git_prompt_color_dirtystate white
+set -g __fish_git_prompt_color_cleanstate white --bold
+set -g __fish_git_prompt_color_invalidstate white
+set -g __fish_git_prompt_color_branch white --dim
 
 # Ghostty shell integration (working-directory tracking, etc.)
 if test -d /Applications/Ghostty.app
