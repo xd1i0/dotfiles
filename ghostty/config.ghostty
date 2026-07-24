@@ -1,0 +1,70 @@
+copy-on-select = false
+scrollback-limit = 1000000
+clipboard-trim-trailing-spaces = true
+link-url = true
+notify-on-command-finish = unfocused
+window-subtitle = working-directory
+window-show-tab-bar = never
+
+# aesthetics
+background=#0F0F11
+theme= Nord Wave
+
+# typography
+font-size=16
+font-thicken-strength=1
+adjust-cell-height=1
+font-family=GeistMono
+cursor-click-to-move = true
+mouse-hide-while-typing = true
+cursor-style-blink = false
+cursor-style = block
+adjust-cursor-thickness = 300%
+
+term = "xterm-256color"
+window-padding-balance = true
+window-padding-color = "background"
+window-padding-x = 10
+window-padding-y = 10
+
+macos-icon = "custom-style"
+macos-icon-frame = "plastic"
+macos-icon-ghost-color = #000000
+macos-icon-screen-color = #FFFFFF
+
+# left Option key acts as Alt (for Claude Code alt+p / alt+t shortcuts)
+macos-option-as-alt = left
+
+# window
+confirm-close-surface = false
+window-theme = system
+resize-overlay = never
+window-save-state = always
+window-inherit-working-directory = true
+
+# splits
+unfocused-split-opacity = 0.80
+unfocused-split-fill = #a33503
+split-divider-color = #FF4F00
+
+# Keybindings
+
+# splits (Ghostty native — cmd+d / cmd+shift+d already default, listed here for clarity)
+# cmd+d = new_split:right (built-in)
+# cmd+shift+d = new_split:down (built-in)
+
+# navigate between splits
+keybind = super+h=goto_split:left
+keybind = super+j=goto_split:bottom
+keybind = super+k=goto_split:top
+keybind = super+l=goto_split:right
+
+# resize splits
+keybind = super+right=resize_split:right,50
+keybind = super+down=resize_split:down,50
+keybind = super+left=resize_split:left,50
+keybind = super+up=resize_split:up,50
+
+# Claude Code shift+enter support
+keybind = shift+enter=text:\n
+
