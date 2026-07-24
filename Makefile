@@ -1,13 +1,14 @@
+PACKAGES := nvim ghostty
+
 all: sync
 
 sync:
-	mkdir -p ~/.config
-
-	[ -L ~/.config/nvim ] || [ -e ~/.config/nvim ] || ln -s $(PWD)/nvim ~/.config/nvim
-	[ -L ~/.config/ghostty ] || [ -e ~/.config/ghostty ] || ln -s $(PWD)/ghostty ~/.config/ghostty
+	stow -v -t ~ $(PACKAGES)
 
 clean:
-	[ ! -L ~/.config/nvim ] || rm -f ~/.config/nvim
-	[ ! -L ~/.config/ghostty ] || rm -f ~/.config/ghostty
+	stow -D -v -t ~ $(PACKAGES)
 
-.PHONY: all clean sync
+restow:
+	stow -R -v -t ~ $(PACKAGES)
+
+.PHONY: all clean sync restow
