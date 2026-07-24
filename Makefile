@@ -1,4 +1,4 @@
-PACKAGES := nvim ghostty
+PACKAGES := nvim ghostty zsh
 
 all: sync
 
