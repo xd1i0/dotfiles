@@ -1,4 +1,4 @@
-PACKAGES := nvim ghostty zsh claude fish git
+PACKAGES := nvim ghostty zsh claude fish git tig
 
 all: sync
 

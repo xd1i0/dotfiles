@@ -41,6 +41,8 @@ brew "swiftformat"
 brew "swiftlint"
 # Terminal multiplexer
 brew "tmux"
+# Text-mode interface for git
+brew "tig"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
