@@ -1,0 +1,17 @@
+# Stow's built-in default ignore list, minus .gitignore, so this
+# package can install a global .gitignore into $HOME.
+RCS
+.+,v
+CVS
+\.\#.+
+\.cvsignore
+\.svn
+_darcs
+\.hg
+\.git$
+\.gitmodules
+.+~
+\#.*\#
+^/README.*
+^/LICENSE.*
+^/COPYING
