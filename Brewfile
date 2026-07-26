@@ -63,6 +63,8 @@ cask "hiddenbar"
 cask "pearcleaner"
 # Control your tools with a few keystrokes
 cask "raycast"
+# better grep
+brew "ripgrep"
 # Mesh VPN
 brew "tailscale"
 # besser als postman
