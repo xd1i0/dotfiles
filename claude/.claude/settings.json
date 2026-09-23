@@ -1,4 +1,36 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(ls *)",
+      "Bash(pwd)"
+    ],
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/.p8)",
+      "Read(**/secrets/**)",
+      "Read(**/credentials.json)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/id_rsa)",
+      "Read(**/id_ed25519)",
+      "Read(~/.aws/**)",
+      "Read(~/.ssh/**)",
+      "Read(~/Library/Keychains/**)",
+      "Bash(cat *.env*)",
+      "Bash(cat **/secrets/**)",
+      "Bash(security find-generic-password*)",
+      "Bash(security find-internet-password*)",
+      "Bash(security dump-keychain*)",
+      "Bash(security export*)",
+      "Bash(*Co-Authored-By*)",
+      "Bash(*co-authored-by*)"
+    ]
+  },
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": false,
     "swift-lsp@claude-plugins-official": false,
@@ -19,37 +51,7 @@
     }
   },
   "alwaysThinkingEnabled": false,
-  "tui": "fullscreen",
   "effortLevel": "medium",
-  "permissions": {
-    "deny": [
-      "Read(**/.env)",
-      "Read(**/.env.*)",
-      "Read(**/secrets/**)",
-      "Read(**/credentials.json)",
-      "Read(**/*.pem)",
-      "Read(**/*.key)",
-      "Read(**/id_rsa)",
-      "Read(**/id_ed25519)",
-      "Read(~/.aws/**)",
-      "Read(~/.ssh/**)",
-      "Read(~/Library/Keychains/**)",
-      "Bash(cat *.env*)",
-      "Bash(cat **/secrets/**)",
-      "Bash(security find-generic-password*)",
-      "Bash(security find-internet-password*)",
-      "Bash(security dump-keychain*)",
-      "Bash(security export*)",
-      "Bash(*Co-Authored-By*)",
-      "Bash(*co-authored-by*)"
-    ],
-    "allow": [
-      "Bash(git status)",
-      "Bash(git diff *)",
-      "Bash(git log *)",
-      "Bash(git show *)",
-      "Bash(ls *)",
-      "Bash(pwd)"
-    ]
-  }
+  "tui": "fullscreen",
+  "model": "opus"
 }
