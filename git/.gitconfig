@@ -53,3 +53,6 @@
 	rebase = false
 [init]
 	defaultBranch = main
+
+[includeIf "gitdir:~/code/uni/"]
+	path = ~/.gitconfig-uni
