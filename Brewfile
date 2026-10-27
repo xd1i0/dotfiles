@@ -19,6 +19,12 @@ brew "go"
 brew "imagemagick"
 # Handy way to save and run project-specific commands
 brew "just"
+# Kubernetes CLI
+brew "kubectl"
+# Switch between Kubernetes contexts and namespaces
+brew "kubectx"
+# Terminal UI for Kubernetes clusters
+brew "k9s"
 # Implementation of the file(1) command
 brew "libmagic"
 # Deep clean and optimize your Mac
