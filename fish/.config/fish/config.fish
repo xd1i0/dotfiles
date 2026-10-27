@@ -11,6 +11,7 @@ fish_add_path --global /opt/homebrew/opt/openjdk@17/bin
 fish_add_path --global /opt/homebrew/opt/ruby/bin
 fish_add_path --global $HOME/.local/bin
 fish_add_path --global $HOME/.cargo/bin
+fish_add_path --global $HOME/go/bin
 
 # SDKMAN has no native fish support (github.com/sdkman/sdkman-cli/issues/671).
 # `sdk` is a bash function, not a binary, so bass alone can't expose it —
