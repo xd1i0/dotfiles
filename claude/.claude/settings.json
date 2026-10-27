@@ -21,6 +21,20 @@
       "Read(~/.aws/**)",
       "Read(~/.ssh/**)",
       "Read(~/Library/Keychains/**)",
+      "Read(~/.kube/**)",
+      "Bash(cat ~/.kube*)",
+      "Bash(kubectl * get secret*)",
+      "Bash(kubectl * get secrets*)",
+      "Bash(kubectl get secret*)",
+      "Bash(kubectl get secrets*)",
+      "Bash(kubectl * describe secret*)",
+      "Bash(kubectl describe secret*)",
+      "Bash(kubectl config view*--raw*)",
+      "Bash(kubectl * config view*--raw*)",
+      "Bash(kubectl * create token*)",
+      "Bash(kubectl create token*)",
+      "Bash(kubectl * exec*)",
+      "Bash(kubectl exec*)",
       "Bash(cat *.env*)",
       "Bash(cat **/secrets/**)",
       "Bash(security find-generic-password*)",
@@ -53,5 +67,5 @@
   "alwaysThinkingEnabled": false,
   "effortLevel": "medium",
   "tui": "fullscreen",
-  "model": "opus"
+  "model": "sonnet"
 }
