@@ -1,4 +1,5 @@
 tap "sdkman/tap"
+tap "infisical/get-cli"
 # Cross-platform make
 brew "cmake"
 # Dependency manager for Cocoa projects
@@ -17,6 +18,8 @@ brew "fd"
 brew "go"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Secrets management CLI
+brew "infisical/get-cli/infisical"
 # Handy way to save and run project-specific commands
 brew "just"
 # Kubernetes CLI

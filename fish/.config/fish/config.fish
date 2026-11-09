@@ -21,6 +21,9 @@ if test -s "$SDKMAN_DIR/bin/sdkman-init.sh"
     function sdk
         bass source "$SDKMAN_DIR/bin/sdkman-init.sh" ';' sdk $argv
     end
+    # Added after openjdk@17 so `sdk default java` wins in new shells
+    fish_add_path --global $SDKMAN_DIR/candidates/java/current/bin
+    set -gx JAVA_HOME $SDKMAN_DIR/candidates/java/current
 end
 
 # git prompt styling

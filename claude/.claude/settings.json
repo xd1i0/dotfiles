@@ -22,6 +22,7 @@
       "Read(~/.ssh/**)",
       "Read(~/Library/Keychains/**)",
       "Read(~/.kube/**)",
+      "Read(~/.infisical/**)",
       "Bash(cat ~/.kube*)",
       "Bash(kubectl * get secret*)",
       "Bash(kubectl * get secrets*)",
@@ -35,6 +36,15 @@
       "Bash(kubectl create token*)",
       "Bash(kubectl * exec*)",
       "Bash(kubectl exec*)",
+      "Bash(cat ~/.infisical*)",
+      "Bash(infisical secrets*)",
+      "Bash(infisical * secrets*)",
+      "Bash(infisical export*)",
+      "Bash(infisical * export*)",
+      "Bash(infisical run*)",
+      "Bash(infisical * run*)",
+      "Bash(infisical token*)",
+      "Bash(infisical * token*)",
       "Bash(cat *.env*)",
       "Bash(cat **/secrets/**)",
       "Bash(security find-generic-password*)",
@@ -45,6 +55,7 @@
       "Bash(*co-authored-by*)"
     ]
   },
+  "model": "opus",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": false,
     "swift-lsp@claude-plugins-official": false,
@@ -66,6 +77,5 @@
   },
   "alwaysThinkingEnabled": false,
   "effortLevel": "medium",
-  "tui": "fullscreen",
-  "model": "sonnet"
+  "tui": "fullscreen"
 }
