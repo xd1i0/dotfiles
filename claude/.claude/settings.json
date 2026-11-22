@@ -77,5 +77,34 @@
   },
   "alwaysThinkingEnabled": false,
   "effortLevel": "medium",
-  "tui": "fullscreen"
+  "tui": "fullscreen",
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: ObServe-Your-Server (GitHub org; this repo's remote)",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: not queryable here (gh visibility check failed) — treat as possibly public: scope commits/pushes to this repo as for a public repo until confirmed otherwise",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: Infisical (seen in shell history); CI secret SUBMODULES_TOKEN referenced in workflow config (deploy key exists, not its value)",
+      "**Default / protected branches**: main (default branch); protected-branch/ruleset status not queryable here — treat main as protected by default caution",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured — assume Claude Code runs on an ordinary developer machine with open internet",
+      "**Source control**: The trusted repo (github.com/ObServe-Your-Server/observe-android) and its remote only",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: watch-tower.observe.vision, watch-tower-dev.observe.vision (contacted from this project's transcripts)",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: keystore files (*.keystore, matched by .gitignore) and one unusual-named ignored path — treat as credential material; share only with audiences cleared at the [named+specifics] bar",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word/segment",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name/tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development (Android client, Jetpack Compose)",
+      "**Trusted repo**: ~/code/observe-android (github.com/ObServe-Your-Server/observe-android), including its submodule observe-design",
+      "**Org-specific CLIs**: None configured",
+      "routine under ~/code/observe-android/ prefix: gradle/gradlew builds, adb, xcrun (seen in this project's usage)"
+    ]
+  }
 }

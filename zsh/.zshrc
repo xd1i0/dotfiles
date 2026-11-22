@@ -11,3 +11,6 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # Created by `pipx` on 2026-03-31 06:19:19
 export PATH="$PATH:/Users/daniel/.local/bin"
+
+# Added by Kiri: its docker and kiri commands (kiri setup --uninstall removes this)
+case ":$PATH:" in *":$HOME/.kiri/bin:"*) ;; *) export PATH="$PATH:$HOME/.kiri/bin" ;; esac
